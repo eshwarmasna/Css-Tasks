@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 100vw;
+        height: 8vh;
+        /* border: 1px solid green; */
+        position: relative;
+        background-color: whitesmoke;
+      }
+      .project {
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+        /* border: 2px solid black; */
+        height: 20vh;
+        text-align: center;
+        width: 9vw;
+        font-size: 20px;
+        right: 240px;
+        /* background-color: grey; */
+        top: 8px;
+      }
+      .about {
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        /* border: 2px solid black; */
+        height: 20vh;
+        font-size: 20px;
+        text-align: center;
+        width: 7vw;
+        right: 150px;
+        top: 8px;
+      }
+      .contact {
+        position: absolute;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        /* border: 2px solid black; */
+        height: 20vh;
+        text-align: center;
+        width: 5vw;
+        right: 60px;
+        top: 8px;
+      }
+      .archict {
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 20px;
+        /* border: 2px solid black; */
+        left: 18px;
+        top: 8px;
+        height: vhpx;
+        text-align: center;
+        width: 10;
+        /* background-color: rgb(184, 121, 121); */
+        color: black;
+      }
+      .clutter {
+        position: absolute;
+        right: 45%;
+        bottom: 170px;
+      }
+      .imghead {
+        display: flex;
+        /* border: 1px solid; */
+        width: 99%;
+        height: 250px;
+        /* margin: auto; */
+        position: relative;
+        padding-top: 20px;
+      }
+      .img1 {
+        position: absolute;
+        left: 20px;
+        /* justify-content: space-evenly; */
+
+        /* border: 1px solid; */
+        width: 20%;
+        margin: 10px 20px 20px;
+        height: 173px;
+        /* padding: 1px 3px 5px; */
+      }
+      .img2 {
+        position: absolute;
+
+        /* border: 1px solid; */
+        right: 670px;
+        width: 20%;
+        margin: 10px 20px 20px;
+        height: 173px;
+      }
+      .img3 {
+        position: absolute;
+        right: 330px;
+        /* border: 1px solid; */
+        width: 20%;
+        margin: 10px 20px 20px;
+        /* padding: auto; */
+        height: 173px;
+      }
+      .img4 {
+        position: absolute;
+        right: 15px;
+        /* border: 1px solid; */
+        width: 20%;
+        height: 173px;
+        margin: 10px 20px 20px;
+      }
+      .imghead2 {
+        display: flex;
+        /* border: 1px solid; */
+        width: 99%;
+        height: 250px;
+        /* margin: auto; */
+        position: relative;
+        padding-top: 20px;
+      }
+      .main {
+        display: flex;
+        /* border: 1px solid black; */
+
+        width: 99%;
+        margin: 10px 20px 40px 20px;
+        padding-left: 24px;
+        height: 450px;
+      }
+      .pic1 {
+        /* border: 1px solid black; */
+        width: 24%;
+        height: 200px;
+        box-shadow: 100px;
+        filter: grayscale(80%);
+      }
+      .pic2 {
+        /* border: 1px solid black; */
+        width: 24%;
+        height: 200px;
+        filter: grayscale(80%);
+      }
+      .pic3 {
+        /* border: 1px solid black; */
+        width: 24%;
+        height: 200px;
+        filter: grayscale(80%);
+      }
+      .pic4 {
+        /* border: 1px solid black; */
+        width: 24%;
+        height: 200px;
+        filter: grayscale(80%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="archict"><b>BR </b>Architects</div>
+      <div class="project">Projects</div>
+      <div class="about">About</div>
+      <div class="contact">Contact</div>
+    </div>
+    <div style="position: relative">
+      <img src="../Mutimedia/Images/architect.jpg" alt="" width="100%" />
+    </div>
+    <br />
+    <div class="clutter">
+      <h1
+        style="
+          display: inline-block;
+          width: 5vw;
+          background-color: rgb(90, 88, 88);
+          text-align: center;
+          position: relative;
+        "
+      >
+        <b>BR</b>
+      </h1>
+      <span
+        style="font-size: 25px; color: aliceblue; font-size: 36px; width: 20vw"
+        >Architects</span
+      >
+    </div>
+    <h2 style="position: absolute; top: 56vw; padding-left: 10px">Projects</h2>
+    <br />
+    <hr />
+    <div class="imghead2">
+      <div class="img1">
+        <img src="../Mutimedia/Images/A1.jpg" alt="" width="280px" />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -20px;
+            height: 25px;
+          "
+        >
+          Summer House
+        </h4>
+      </div>
+      <div class="img2">
+        <img
+          src="../Mutimedia/Images/A3.jpg"
+          alt=""
+          width="280px
+        "
+        />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -21px;
+            height: 25px;
+          "
+        >
+          Brick House
+        </h4>
+      </div>
+      <div class="img3">
+        <img src="../Mutimedia/Images/A4.jpg" width="280px" />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -21px;
+            height: 25px;
+          "
+        >
+          Renovated
+        </h4>
+      </div>
+      <div class="img4">
+        <img src="../Mutimedia/Images/A5.jpg" width="280px" alt="" />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -21px;
+            height: 25px;
+          "
+        >
+          Barn House
+        </h4>
+      </div>
+    </div>
+    <div class="imghead">
+      <div class="img1">
+        <img src="../Mutimedia/Images/A3.jpg" alt="" width="280px" />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -21px;
+            height: 25px;
+          "
+        >
+          Brick House
+        </h4>
+      </div>
+      <div class="img2">
+        <img
+          src="../Mutimedia/Images/A1.jpg"
+          alt=""
+          width="280px
+        "
+        />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -20px;
+            height: 25px;
+          "
+        >
+          Summer House
+        </h4>
+      </div>
+      <div class="img3">
+        <img src="../Mutimedia/Images/A5.jpg" width="280px" />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -21px;
+            height: 25px;
+          "
+        >
+          Barn House
+        </h4>
+      </div>
+      <div class="img4">
+        <img src="../Mutimedia/Images/A4.jpg" width="280px" alt="" />
+        <h4
+          style="
+            background-color: black;
+            color: white;
+            width: 110px;
+            position: absolute;
+            top: -21px;
+            height: 25px;
+          "
+        >
+          Barn House
+        </h4>
+      </div>
+    </div>
+    <div>
+      <h2 style="padding-left: 15px">About</h2>
+      <hr style="margin: 20px 15px" />
+      <p
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          padding-left: 20px;
+          padding-right: 5px;
+          font-size: 15px;
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
+        in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="main">
+      <div class="pic1">
+        <img
+          src="../Mutimedia/Images/Doe.jpg"
+          alt=""
+          width="280px"
+          height="200px"
+        />
+        <h2>John Doe</h2>
+        <p>CEO & Founder</p>
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button
+          style="
+            background-color: rgb(164, 180, 196);
+            border: none;
+            width: 256px;
+            margin-left: 14px;
+            height: 29px;
+          "
+        >
+          Contact
+        </button>
+      </div>
+      <div class="pic2">
+        <img
+          src="../Mutimedia/Images/Doe2.jpg"
+          alt=""
+          width="280px"
+          height="200px"
+        />
+        <h2>Jane Doe</h2>
+        <p>Architect</p>
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button
+          style="
+            background-color: rgb(164, 180, 196);
+            border: none;
+            width: 256px;
+            margin-left: 14px;
+            height: 29px;
+          "
+        >
+          Contact
+        </button>
+      </div>
+      <div class="pic3">
+        <img
+          src="../Mutimedia/Images/Doe3.jpg"
+          alt=""
+          width="280px"
+          height="200px"
+        />
+        <h2>Mike Ross</h2>
+        <p>Architect</p>
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button
+          style="
+            background-color: rgb(164, 180, 196);
+            border: none;
+            width: 256px;
+            margin-left: 14px;
+            height: 29px;
+          "
+        >
+          Contact
+        </button>
+      </div>
+      <div class="pic4">
+        <img
+          src="../Mutimedia/Images/Doe4.jpg"
+          alt=""
+          width="280px"
+          height="200px"
+        />
+        <h2>Dan Star</h2>
+        <p>Architect</p>
+
+        <p>
+          Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+          pellentesque elementum.
+        </p>
+        <button
+          style="
+            background-color: rgb(164, 180, 196);
+            border: none;
+            width: 256px;
+            margin-left: 14px;
+            height: 29px;
+          "
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2 style="margin-left: 37px">Contact</h2>
+      <p style="margin-left: 34px">
+        Let's Get in touch and talk about your next project
+      </p>
+      <form>
+        <input
+          type="text"
+          placeholder="Name"
+          style="height: 30px; width: 98%; margin-left: 30px"
+          required
+        /><br /><br />
+        <input
+          type="email"
+          placeholder="Email"
+          style="height: 30px; width: 98%; margin-left: 30px"
+          required
+        /><br /><br />
+        <input
+          type="text"
+          placeholder="Subject"
+          style="height: 30px; width: 98%; margin-left: 30px"
+          required
+        /><br /><br />
+        <input
+          type="text"
+          placeholder="Comment"
+          style="height: 30px; width: 98%; margin-left: 30px"
+          required
+        /><br /><br />
+        <button
+          id="hover"
+          style="
+            background-color: black;
+            color: white;
+            width: 180px;
+            height: 40px;
+            margin-left: 25px;
+          "
+        >
+          SEND MESSAGE
+        </button>
+      </form>
+    </div>
+    <br /><br />
+    <div>
+      <img src="../Mutimedia/Images/FourWay.jpg" alt="" width="98%" /><br />
+    </div>
+    <div
+      style="
+        background-color: black;
+        height: 40px;
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 18px;
+      "
+    >
+      Powered by W3 Schools
+    </div>
+  </body>
+</html>

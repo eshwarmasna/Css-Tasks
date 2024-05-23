@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a[target] {
+        background-color: aquamarine;
+      }
+      [name] {
+        border: 1px solid;
+      }
+      [class*="flower"] {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: teal;
+      }
+      [class="back"] {
+        border: 2px solid;
+        width: 240px;
+        height: 250px;
+        background-image: url(../Mutimedia/Images/T2.jpg);
+        background-repeat: no-repeat;
+        /* background-position: left; */
+        /* background-size: 320px; */
+        /* background-attachment:fixed; */
+        /* background-blend-mode: hard-light;*/
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../Mutimedia/Images/A1.jpg" target="_blank"
+      >Attribute Selectors in css</a
+    >
+    <h1 name="name">Attribute Selectors in Css</h1>
+    <div class="varian">
+      <h1 class="flower">Drinking Is Injrious to health</h1>
+      <p class="flower scenario">Dont drink and Drive...</p>
+    </div>
+
+    <div class="back">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,
+        sapiente aperiam! Ipsum ducimus illo deleniti soluta obcaecati? Quis
+        voluptatum provident est, temporibus incidunt ut eum eaque natus
+        explicabo, hic animi!
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      border: 20px solid rgb(149, 174, 182);
+    }
+    [id="uname"] {
+      padding: 20px 15px 30px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 20px;
+    }
+    [type="text"] {
+      border: 2px solid blue;
+      background-color: lightgoldenrodyellow;
+      padding: 3px 0px 0px 0px;
+      margin: 8px 0px 0px 20px;
+      width: 40vw;
+      border-radius: 20px;
+      height: 4vh;
+    }
+    [class~="fname"] {
+      padding-left: 20px;
+    }
+    [class="bday"] {
+      border: 2px solid blue;
+      width: 85vw;
+      height: 4.5vh;
+      margin-left: 22px;
+      background-color: lightgoldenrodyellow;
+      border-radius: 20px;
+    }
+    [class="red"] {
+      padding: 0px 25px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 20px;
+    }
+    [class="pink"] {
+      border: 2px solid blue;
+      width: 88vw;
+    }
+    [class="phn"] {
+      border: 2px solid blue;
+      margin-left: 20px;
+      width: 88vw;
+      height: 4vh;
+      border-radius: 20px;
+      background-color: lightgoldenrodyellow;
+    }
+    #caps {
+      width: 5vw;
+      height: 5vh;
+      /* padding-top: 20px; */
+    }
+    [class="robo"] {
+      padding-left: px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: 20px;
+    }
+    [class="box"] {
+      margin: 18px;
+    }
+    [class="modify"] {
+      width: 14vw;
+      height: 6vh;
+      background-color: orangered;
+      margin-left: 45%;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div>
+      <form action="">
+        <h1 style="text-align: center">Medical Appointment Form</h1>
+        <label for="name" id="uname">Your Name :</label><br />
+        <input
+          type="text"
+          name="Name"
+          placeholder="First Name"
+          id="name"
+          class="fname"
+        />
+
+        <input
+          type="text"
+          name="Name1"
+          placeholder="Last Name"
+          class="fname"
+        /><br /><br />
+        <label
+          for="text"
+          style="
+            padding-bottom: 18px;
+            margin: 14px 0px 20px 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+          "
+          >Birth date :</label
+        ><br /><br />
+        <input
+          type="date"
+          name="Email"
+          placeholder="DD/MM/YYYY"
+          id="text"
+          class="bday"
+        /><br /><br />
+        <p
+          style="
+            padding-left: 20px;
+            /* padding-top: 20px; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+          "
+        >
+          Is Your First Time Visit :
+        </p>
+        <br />
+        <div class="red">
+          <label for="r1">Yes</label>
+          <input type="radio" id="r1" name="yes" class="red" />
+          <label for="r2">No</label>
+          <input type="radio" id="r2" name="yes" class="red" />
+        </div>
+        <p
+          style="
+            padding-left: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+          "
+        >
+          Name the doctor you want to visit :
+        </p>
+
+        <div>
+          <input
+            type="text"
+            id="r1"
+            name="yes"
+            placeholder="First"
+            class="fname"
+          />
+          <input
+            type="text"
+            id="r2"
+            name="yes"
+            placeholder="Last"
+            class="fname"
+          />
+        </div>
+        <div>
+          <p
+            style="
+              padding-left: 20px;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-size: 20px;
+            "
+          >
+            Do you have any of below :
+          </p>
+          <p
+            style="
+              padding-left: 20px;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-size: 20px;
+            "
+          >
+            Fever :
+          </p>
+          <div class="red">
+            <label for="c1">Yes </label>
+            <input type="radio" id="c1" class="red" name="yes"/>
+            <label for="c2">No </label>
+            <input type="radio" id="c2" name="yes" />
+            <p>Vomiting :</p>
+            <label for="c1">Yes </label>
+            <input type="radio" id="c1" name="yes" />
+            <label for="c2">No </label>
+            <input type="radio" id="c2" name="yes" />
+            <p>Cough :</p>
+            <label for="c1">Yes </label>
+            <input type="radio" id="c1" name="yes"/>
+            <label for="c2">No </label>
+            <input type="radio" id="c2" name="yes"/>
+          </div>
+        </div>
+        <div>
+          <p
+            style="
+              padding-left: 20px;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-size: 20px;
+            "
+          >
+            Please answer the following :
+          </p>
+          <p
+            style="
+              padding-left: 20px;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-size: 20px;
+            "
+          >
+            Have you been discharged from hospital in the last 14 days? :
+          </p>
+          <div class="red">
+            <label for="c1">Yes </label>
+            <input type="radio" id="c1"  name="yes"/>
+            <label for="c2">No </label>
+            <input type="radio" id="c2" name="yes"/>
+            <p>
+              Contact with a person diagnosed positive with communicable disease
+              in the last 14 days? :
+            </p>
+            <label for="c1">Yes </label>
+            <input type="radio" id="c1" name="yes"/>
+            <label for="c2">No </label>
+            <input type="radio" id="c2" name="yes"/>
+            <p>Do you suffer from shortness of breath or chest discomfort?:</p>
+            <label for="c1">Yes </label>
+            <input type="radio" id="c1" name="yes"/>
+            <label for="c2">No </label>
+            <input type="radio" id="c2" name="yes" />
+          </div>
+        </div>
+        <p
+          style="
+            padding-left: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+          "
+        >
+          Main reason for medical visit request today:
+        </p>
+        <input type="text" name="Reason" class="pink" />
+        <p
+          style="
+            padding-left: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+          "
+        >
+          Phone Number:
+        </p>
+        <input type="number" name="Reason" placeholder="########" class="phn" />
+
+        <p
+          style="
+            padding-left: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            font-size: 21px;
+          "
+        >
+          Verification
+        </p>
+        <div class="verify">
+          <input type="checkbox" id="robo" class="box" /><label
+            for="robo"
+            class="robo"
+            >I am Not an Robot</label
+          >
+          <img src="../Mutimedia/Images/recapcha.png" alt="" id="caps" />
+        </div>
+        <div>
+          <button class="modify">SUBMIT BUTTON</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
