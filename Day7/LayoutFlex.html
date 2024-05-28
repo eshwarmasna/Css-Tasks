@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      [class="parent"] {
+        border: 2px solid black;
+        width: 100vw;
+        height: 100vh;
+        /* display: flex; */
+        background-color: coral;
+      }
+      [class="nav"] {
+        border: 2px solid;
+        width: 95vw;
+        /* background-color: crimson; */
+        height: 10vh;
+        margin-left: 30px;
+        background-image: linear-gradient(red, blue, yellow, pink);
+        margin-top: 20px;
+      }
+      [class="magic"] {
+        border: 2px solid black;
+        width: 98vw;
+        height: 60vh;
+        margin-left: 10px;
+        margin-top: 20px;
+        justify-content: space-between;
+        background-color: cornflowerblue;
+        display: flex;
+      }
+      [class="left"] {
+        border: 2px solid;
+        width: 23vw;
+        height: 47vh;
+        display: flex;
+        padding: 10px;
+        background-color: rgb(55, 168, 79);
+        margin: 20px 20px 10px;
+      }
+      .vertic1 {
+        border: 2px solid black;
+        width: 70vw;
+        height: 49vh;
+        padding: 4px;
+        background-color: crimson;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        display: flex;
+        /* gap: 20px 20px; */
+        margin-top: 20px;
+        margin-right: 20px;
+
+        justify-content: space-between;
+      }
+
+      /* .box {
+        border: 2px solid black;
+        width: 10vw;
+        height: 14vh;
+        margin: 10px;
+      }
+      .bat {
+        border: 2px solid black;
+        width: 10vw;
+        height: 14vh;
+        margin: 10px;
+      } */
+      /* .vertic2 {
+        border: 2px solid;
+        display: flex;
+        width: 69vw;
+        height: 48vh;
+        flex-direction: row;
+        justify-content: space-between;
+      } */
+      /* .horific1 {
+        border: 2px solid;
+        display: flex;
+        width: 69vw;
+        height: 48vh;
+        flex-direction: row;
+        justify-content: space-between;
+      } */
+      [class="attr"] {
+        display: flex;
+        /* border: 1px solid; */
+        width: 201vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 30px;
+      }
+      #one {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        background-color: green;
+      }
+      #two {
+        border: 2px solid;
+        width: 10vw;
+        background-color: violet;
+        height: 20vh;
+      }
+      #three {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        background-color: indigo;
+      }
+      #four {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        background-color: blue;
+      }
+      [class="valu"] {
+        display: flex;
+        width: 201vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+      }
+      #var1 {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        background-color: orange;
+      }
+      #var2 {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        background-color: firebrick;
+      }
+      #var3 {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        background-color: cyan;
+      }
+      #var4 {
+        border: 2px solid;
+        width: 10vw;
+        background-color: darkolivegreen;
+        height: 20vh;
+      }
+      .foot {
+        display: flex;
+        border: 2px solid;
+        justify-content: space-around;
+        width: 100vw;
+        background-color: rgb(196, 137, 28);
+        height: 30vh;
+      }
+      #f1 {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        margin-top: 20px;
+        display: flex;
+        background-color: darkorchid;
+        gap: 10px;
+        /* margin-top: 0px; */
+      }
+
+      #f2 {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        margin-top: 20px;
+        background-color: darkslateblue;
+        display: flex;
+        margin-top: 20px;
+        gap: 10px;
+      }
+      #f3 {
+        border: 2px solid;
+        width: 10vw;
+        height: 20vh;
+        margin-top: 20px;
+        display: flex;
+        background-color: darkred;
+        gap: 10px;
+      }
+      #f4 {
+        border: 2px solid;
+        width: 10vw;
+        background-color: deeppink;
+        height: 20vh;
+        margin-top: 20px;
+      }
+      #f5 {
+        border: 2px solid;
+        width: 10vw;
+        background-color: deepskyblue;
+        height: 20vh;
+        margin-top: 20px;
+      }
+      #f11 {
+        border: 2px solid;
+        width: 4.3vw;
+        height: 15vh;
+        margin-top: 10px;
+        background-color: darksalmon;
+      }
+      #f12 {
+        border: 2px solid;
+        width: 4vw;
+        height: 15vh;
+        background-color: hotpink;
+        margin-top: 10px;
+        margin-right: 5px;
+      }
+      #f21 {
+        border: 2px solid;
+        width: 4.3vw;
+        height: 15vh;
+        background-color: darkorchid;
+        margin-top: 10px;
+      }
+      #f22 {
+        border: 2px solid;
+        width: 4vw;
+        height: 15vh;
+        background-color: darkslategray;
+        margin-top: 10px;
+        margin-right: 5px;
+      }
+      #f31 {
+        border: 2px solid;
+        width: 4.3vw;
+        height: 15vh;
+        margin-top: 10px;
+        background-color: darksalmon;
+      }
+      #f32 {
+        border: 2px solid;
+        width: 4vw;
+        height: 15vh;
+        margin-top: 10px;
+        margin-right: 5px;
+        background-color: darkkhaki;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="nav"></div>
+      <div class="magic">
+        <div class="left"></div>
+
+        <div class="vertic1">
+          <!--  <div class="vertic2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div> 
+          </div>
+-->
+          <!-- <div class="horific1">
+            <div class="bat"></div>
+            <div class="bat"></div>
+            <div class="bat"></div> 
+             <div class="bat"></div> 
+          </div>
+        </div>
+      </div> -->
+          <div class="attr">
+            <div id="one">1</div>
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+          </div>
+          <div class="valu">
+            <div id="var1">12</div>
+            <div id="var2">13</div>
+            <div id="var3">14</div>
+            <div id="var4">15</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="foot">
+      <div id="f1">
+        11
+        <div id="f11"></div>
+        <div id="f12"></div>
+      </div>
+      <div id="f2">
+        21
+        <div id="f21"></div>
+        <div id="f22"></div>
+      </div>
+      <div id="f3">
+        31
+        <div id="f31"></div>
+        <div id="f32"></div>
+      </div>
+      <div id="f4">34</div>
+      <div id="f5">35</div>
+    </div>
+  </body>
+</html>
