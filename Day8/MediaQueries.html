@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: teal;
+      }
+      @media all and (min-width: 506px) and (max-width: 750px) {
+        body {
+          background-color: burlywood;
+        }
+      }
+      /* @media all and (min-width: 200px) and (max-width: 505px) {
+        you can use only screen and only print 
+        body {
+          background-color: chocolate;
+        }
+      } */
+      @media only  print and (min-width:200px) and (max-width:505px){
+        body{
+            background-color: crimson;
+        }
+        h2{
+            color: blue;
+            font-size: 230px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Royal Challengers Banglore</h1>
+    <h2>Chennai Super Kings</h2>
+  </body>
+</html>

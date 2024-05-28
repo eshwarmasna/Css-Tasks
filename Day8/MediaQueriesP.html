@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .border {
+        border: 2px solid green;
+        width: 99%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+        background-color: teal;
+      }
+      .nav {
+        border: 2px solid blueviolet;
+        width: 99%;
+        background-image: linear-gradient(red, blue, lightblue, goldenrod);
+        height: 10vh;
+        /* margin-bottom: 20px; */
+      }
+
+      .bdy {
+        border: 2px solid goldenrod;
+        background-image: radial-gradient(circle, orangered, violet, lightblue);
+        width: 96%;
+        height: 50vh;
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+      }
+      .box1 {
+        border: 1px solid;
+        width: 33%;
+        /* background-image: radial-gradient(circle,yellowgreen,teal,white); */
+        background-color: bisque;
+        height: 52vh;
+      }
+      .box2 {
+        border: 1px solid;
+        width: 33%;
+        background-color: rebeccapurple;
+        height: 52vh;
+      }
+      .box3 {
+        border: 1px solid;
+        width: 33%;
+        background-color: brown;
+        height: 52vh;
+      }
+      .footer {
+        border: 2px solid;
+        width: 98%;
+        background-image: radial-gradient(circle, pink, yellow, violet);
+        height: 25vh;
+        display: flex;
+        padding: 10px;
+        gap: 20px;
+      }
+      .gd {
+        border: 1px solid;
+        width: 33%;
+        height: 23vh;
+        background-color: crimson;
+      }
+      .gs {
+        border: 1px solid;
+        background-color: darkgrey;
+        width: 33%;
+        height: 23vh;
+      }
+      .gp {
+        border: 1px solid;
+        width: 33%;
+        background-color: beige;
+        height: 23vh;
+      }
+      @media only screen and (max-width: 450px) {
+        .border {
+          flex-direction: column;
+        }
+        .bdy {
+          border: 2px solid goldenrod;
+          background-image: radial-gradient(
+            circle,
+            orangered,
+            violet,
+            lightblue
+          );
+          width: 96%;
+          height: 50vh;
+          display: flex;
+          padding: 20px;
+          gap: 20px;
+          flex-direction: column;
+        }
+        .box1 {
+          border: 1px solid;
+          width: 100%;
+          /* background-image: radial-gradient(circle,yellowgreen,teal,white); */
+          background-color: bisque;
+          height: 52vh;
+        }
+        .box2 {
+          border: 1px solid;
+          width: 100%;
+          background-color: rebeccapurple;
+          height: 52vh;
+        }
+        .box3 {
+          border: 1px solid;
+          width: 100%;
+          background-color: brown;
+          height: 52vh;
+        }
+        .footer {
+          border: 2px solid;
+          width: 99%;
+          background-image: radial-gradient(circle, pink, yellow, violet);
+          height: 25vh;
+          display: flex;
+          padding: 10px;
+          gap: 20px;
+          flex-direction: column;
+        }
+        .gd {
+          border: 1px solid;
+          width: 100%;
+          height: 23vh;
+          background-color: crimson;
+        }
+        .gs {
+          border: 1px solid;
+          background-color: darkgrey;
+          width: 100%;
+          height: 23vh;
+        }
+        .gp {
+          border: 1px solid;
+          width: 100%;
+          background-color: beige;
+          height: 23vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border">
+      <div class="nav"></div>
+      <div class="bdy">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="footer">
+        <div class="gd"></div>
+        <div class="gs"></div>
+        <div class="gp"></div>
+      </div>
+    </div>
+  </body>
+</html>
