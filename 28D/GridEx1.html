@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Camera {
+        display: grid;
+        border: 1px solid;
+        grid-template-columns: 100px 100px 100px 100px 100px;
+        grid-template-rows: 140px 140px;
+        background-color: crimson;
+        grid-auto-rows: 100px;
+        width: 31%;
+        padding: 10px;
+        gap: 5px;
+        text-align: center;
+        margin: 0px auto;
+      }
+      .clas {
+        background-color: rgb(199, 133, 46);
+        /*  */
+      }
+      .c1 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: rgb(32, 143, 32);
+      }
+      .c2 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        background-color: rgb(33, 180, 33);
+      }
+      .c6 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        background-color: rgb(45, 163, 45);
+      }
+      .c9 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        background-color: rgb(22, 184, 22);
+      }
+      @media  screen and (min-width:320px) {
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Camera">
+      <div class="clas c1">1</div>
+      <div class="clas c2">2</div>
+      <div class="clas c3">3</div>
+      <div class="clas c4">4</div>
+      <div class="clas c5">5</div>
+      <div class="clas c6">6</div>
+      <div class="clas c7">7</div>
+      <div class="clas c8">8</div>
+      <div class="clas c9">9</div>
+      <!-- <div class="clas c10">10</div>
+      <div class="clas c11">11</div>
+      <div class="clas c12">12</div> -->
+    </div>
+  </body>
+</html>
